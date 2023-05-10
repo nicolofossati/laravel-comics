@@ -10,7 +10,11 @@
     @include('partials.header')
    
     <main>
-        
+        @foreach ($data as $comic)
+            <div>
+                <img src="{{$comic['thumb']}}" alt="...">
+            </div>
+        @endforeach
     </main>
 
     
