@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = config('comics.comics');
     return view('comics', compact('data'));
-});
+})->name('comics');
+
+Route::get('/buy', function () {
+    $data = config('comics.comics');
+    return view('buy', compact('data'));
+})->name('buy');
