@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yeld('page-title')</title>
+    <title> @yeld('page-title') </title>
 </head>
 <body>
     @include('partials.header')
    
     <main>
-        @foreach ($data as $comic)
-            <div>
-                <img src="{{$comic['thumb']}}" alt="...">
-            </div>
-        @endforeach
+        @yield('content')
     </main>
 
     
