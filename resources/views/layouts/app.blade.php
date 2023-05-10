@@ -7,19 +7,14 @@
     <title>@yeld('page-title')</title>
 </head>
 <body>
-    @include('header')
-    <header>
-        <h1>HEADER</h1>
-    </header>
-
+    @include('partials.header')
+   
     <main>
-
+        
     </main>
 
     
-    @include('header')
-    <footer>
-        <h1>FOOTER</h1>
-    </footer>
+    @include('partials.footer')
+    
 </body>
 </html>
